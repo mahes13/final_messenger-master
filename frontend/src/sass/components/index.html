@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style> 
+div {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  width: 0px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes example {
+  from {background-color: red; width: 0px; height: 100px; opacity: 0;}
+  to {background-color: yellow; width: 100px; height: 100px; opacity: 1;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>MERN Stack - Chat Application </title>
+
+  </head>
+  
+
+
+<style>
+
+#root{
+  background-color: rgb(12, 12, 28)
+}
+
+
+.pre{
+  height:100vh;
+  width:100vw;
+background-color: rgb(12, 12, 28);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes progress_bar{
+  0%{
+    width: 0%;
+  }
+  25%{
+    width: 25%;
+  }
+  50%{
+    width: 50%;
+  }
+  75%{
+    width: 75%;
+  }
+  90%{
+    width:90%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.preloader_animation{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: yellow; */
+  color:white;
+}
+
+
+.width_growing{
+  background-color: rgb(36, 44, 62);
+  height: 15px;
+  width: 100%;
+  animation: progress_bar;
+  animation-duration: 5s;
+  border-radius: 10%;
+
+
+}
+
+.pre_child{
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+}
+
+
+</style>
+  <body >
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="pre">
+        <div class="pre_child">
+          <h1 style="color:white" class="heading_preloader">PChat 💬</h1>
+        </div>
+        <div class="preloader_animation">
+                 <div class="width_growing">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
