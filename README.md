@@ -9,7 +9,7 @@ Clone the repo and follow the below steps:
 
 For clonning run command
  ```
-git clone git@github.com:Prajwalgawai/final_messenger.git
+git clone git@github.com:mahes13/final_messenger.git
  ```
 
 - Install Node.js
